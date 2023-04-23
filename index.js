@@ -8,7 +8,7 @@ $(document).ready(function(){
       }, 1200, function(){
       window.location.hash = hash;
      });
-     } 
+     }
     });
 });
 
