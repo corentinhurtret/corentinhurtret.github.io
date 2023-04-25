@@ -1,0 +1,8 @@
+#!/bin/bash
+set -e
+set -u
+
+./dau corentin >> /var/www/html/doku/conf/users.auth.php
+./dau elam >> /var/www/html/doku/conf/users.auth.php
+./dau hadrien >> /var/www/html/doku/conf/users.auth.php
+./dau laureline >> /var/www/html/doku/conf/users.auth.php
