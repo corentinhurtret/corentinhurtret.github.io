@@ -40,10 +40,10 @@ group:
     exists: true
     gid: 115
 command:
-  ssh debian@ap32-prod hostname:
+  ssh debian@ap31-prod hostname:
     exit-status: 0
     stdout:
-    - ap32-prod
+    - ap31-prod
     stderr: []
     timeout: 10000
 process:
@@ -57,14 +57,14 @@ interface:
     - fe80::24d8:14ff:fed9:1a4d/64
     mtu: 1500
 http:
-  http://ap32-test/adminer:
+  http://ap31-test/adminer:
     status: 200
     allow-insecure: false
     no-follow-redirects: false
     timeout: 5000
     body:
     - Adminer
-  http://ap32-wiki/doku:
+  http://ap31-wiki/doku:
     status: 200
     allow-insecure: false
     no-follow-redirects: false

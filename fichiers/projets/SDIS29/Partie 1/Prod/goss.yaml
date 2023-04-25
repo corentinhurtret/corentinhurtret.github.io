@@ -50,10 +50,10 @@ group:
     exists: true
     gid: 111
 command:
-  ssh debian@ap32-test hostname:
+  ssh debian@ap31-test hostname:
     exit-status: 0
     stdout:
-    - ap32-test
+    - ap31-test
     stderr: []
     timeout: 10000
 process:
@@ -67,7 +67,7 @@ interface:
     - fe80::3c5a:52ff:fec0:6a09/64
     mtu: 1500
 http:
-  http://ap32-wiki.sio.lan/doku:
+  http://ap31-wiki.sio.lan/doku:
     status: 200
     allow-insecure: false
     no-follow-redirects: false

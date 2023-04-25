@@ -1,6 +1,6 @@
 ---
 - name: apdb
-  hosts: ap32
+  hosts: ap31
   become: true
   become_method: sudo
   tasks:
@@ -12,12 +12,12 @@
       state: present
       login_unix_socket: /run/mysqld/mysqld.sock
 
-  - name: creation utilisateur ap32  
+  - name: creation utilisateur ap31 
     community.mysql.mysql_user:
       login_user: root
       login_password: admin
-      name: ap32
-      password: ap32
+      name: Slam
+      password: Slam1+
       priv: 'sdis29.*:ALL'
       state: present
       login_unix_socket: /run/mysqld/mysqld.sock

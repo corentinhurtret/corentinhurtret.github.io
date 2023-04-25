@@ -1,7 +1,7 @@
-resource "proxmox_vm_qemu" "ap42-test" {
-  name        = "ap42-test"
+resource "proxmox_vm_qemu" "ap41-test" {
+  name        = "ap41-test"
   os_type     = "cloudinit"
-  desc        = "Serveur AP42 Test"
+  desc        = "Serveur AP41 Test"
   target_node = "pxlab1"  # la machine Proxmox cible
   clone       = "Debian-11.6-Template" # le nom de la template a cloner
   cores       = 1

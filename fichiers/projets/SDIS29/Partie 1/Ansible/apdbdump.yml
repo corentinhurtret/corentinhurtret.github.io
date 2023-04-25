@@ -1,5 +1,5 @@
 ---
-- hosts: ap32
+- hosts: ap31
   become: true
   become_method: sudo
   tasks:
@@ -7,8 +7,8 @@
     community.mysql.mysql_db:
       state: dump
       name: "sdis29"
-      login_user: ap32
-      login_password: ap32
+      login_user: Slam
+      login_password: Slam1+
       target: /tmp/sdis29-dump.sql.gz
       login_unix_socket: /run/mysqld/mysqld.sock
 

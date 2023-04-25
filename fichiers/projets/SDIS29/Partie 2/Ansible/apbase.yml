@@ -1,6 +1,6 @@
 ---
 - name: apbase
-  hosts: ap32
+  hosts: ap31
   become: true
   become_method: sudo
   tasks:
